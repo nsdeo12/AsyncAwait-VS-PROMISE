@@ -1,0 +1,5 @@
+function readJSONSync(filename){
+    return JSON.parse(fs.readFileSync(filename,'utf8'));
+
+    
+}
