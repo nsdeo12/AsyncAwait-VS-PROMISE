@@ -11,7 +11,14 @@ var willGetNewPhone=new Promise(function(resolve,reject){
         reject(reason);
     }
 });
+/**
+ * this function below, showoff create a new promise to be
+ * resolved once phone object is obtained.
+ * compare it with willGetNewPhone function above
+ * 
+ *  */
 var showoff=function(phone){
+    console.log("phone",phone);
     return new Promise(
         function(resolve,reject){
             var message="hey guys,I got a "+phone.color+" "+phone.brand+" phone";
@@ -22,7 +29,7 @@ var showoff=function(phone){
 
 var askMom=function(){
     willGetNewPhone
-    .then(showoff)
+    .then(showoff)          //we have chained the function here
     .then(function(fulfilled){
         console.log(fulfilled);
     })
