@@ -44,7 +44,22 @@ const askMom = function () {
 };
 askMom();
 /**
- * all the const are replaced with const. 
+ * all the var are replaced with const. 
  * All the function(resolve, reject) has been
  *  simplified to (resolve, reject) =>. There 
+ * 
+ * -----------------------------------------
+ *  const is often misinterpreted as being a “constant value”. 
+ * Instead, in ES6 a const represents a constant reference to a value 
+ * (the same is true in most languages, in fact).
+ * 
+ * -----------------------------------------
+ * ES5 does not have const and let and node v0.12 does not have too
+ * Run legacy nodes with the following
+ * >>node --harmony /path/to/script
+ * harmony is the original codename for ES6
+ * 
+ * -----------------------------------------
+ * while using const and let run the code in strict mode using the following on the top
+ * use strict
  */
