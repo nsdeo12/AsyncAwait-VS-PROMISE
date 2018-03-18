@@ -8,12 +8,12 @@
 
 
 
-const isMomHappy = false;
+const isMomHappy = true;
 //define the promise
-var willGetPhone = new Promise(
+const willGetPhone = new Promise(
     (resolve, reject) => { //replacing function with fat arrow
         if (isMomHappy) {
-            var phone = {
+            const phone = {
                 brand: 'Samsung',
                 color: 'black'
             };
@@ -43,3 +43,8 @@ const askMom = function () {
 
 };
 askMom();
+/**
+ * all the const are replaced with const. 
+ * All the function(resolve, reject) has been
+ *  simplified to (resolve, reject) =>. There 
+ */
