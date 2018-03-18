@@ -25,7 +25,14 @@ var showoff=function(phone){
             resolve(message);
     })
 }
-
+/**
+ * alternatively the above function can be written with a 
+ * single promise line as below(commented);
+ */
+// var showoff=function(phone){
+//     var message="hey guys,I got a "+phone.color+" "+phone.brand+" phone";
+//     return Promise.resolve(message);
+// }
 
 var askMom=function(){
     willGetNewPhone
