@@ -11,7 +11,7 @@ a new phone next week."*/
  * Promise is rejected: You don't get a new phone because your mom is not happy. 
  */
 
-var isMomHappy = false;
+var isMomHappy = true;
 
 // Promise
 var willIGetNewPhone = new Promise(
@@ -30,9 +30,11 @@ var willIGetNewPhone = new Promise(
     }
 );
 
+
 // call our promise
 var askMom = function () {
     willIGetNewPhone
+    
         .then(function (fulfilled) {
             // yay, you got a new phone
             console.log(fulfilled);
